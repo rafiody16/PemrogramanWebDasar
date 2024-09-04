@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position CSS</title>
+    <link rel="stylesheet" type="text/css" href="stylePosition.css">
+</head>
+<body>
+    <h2>position: static;</h2>
+
+    <p>Position static digunakan untuk mengatur element menjadi statis secara default.
+        Elemen akan mengikuti posisi normal secara default,
+        elemen tidak dipengaruhi oleh properti seperti top, bottom, left dan right.
+    </p>
+
+    <div class="static">
+        Elemen ini diatur menggunakan posisi: static;
+    </div>
+    <br><br><br><br>
+    <h2>position: relative;</h2>
+    <p>Sebuah eleement HTML menggunakan position relative akan terletak pada posisi normal.
+        Mengatur properti atas, kanan, bawah, dan kiri dari elemen yang diposisikan dengan "relatif"
+        akan membuatnya jauh dari posisi normalnya.
+        Konten lain tidak akan disesuaikan agar sesuai dengan celah yang ditinggalkan oleh elemen tersebut.:
+    </p>
+    <div class="relative">
+        Lorem ipsum dolor sit amet. : relative;
+    </div>
+    <br><br><br>
+    <h2>position: fixed</h2>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+        Perspiciatis laborum saepe ea, dolor commodi ab quod sed 
+        consectetur ex. Nesciunt dicta quam dolores ab mollitia recusandae magnam illo amet cupiditate!
+    </p>
+    <div class="fixed">
+        Lorem ipsum dolor sit amet: fixed;
+    </div>
+    <br><br><br>
+    <br><br><br>
+    <br><br><br>
+    <br><br><br>
+    <br><br><br>
+    <h2>position: absolute;</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt illo 
+        cum rerum excepturi odio sint quaerat vel qui hic voluptatibus impedit 
+        dolore perspiciatis adipisci ratione consequatur, voluptates, et optio alias.:
+    </p>
+    <div class="relative1">Lorem ipsum dolor sit amet: relative;
+        <div class="absolute">Lorem ipsum dolor sit amet: absolute</div>
+    </div>
+
+    <br><br><br>
+    <br><br><br>
+
+    <h2>position: sticky;</h2>
+    <p>Cobalah untuk <b>scroll</b> untuk mengetahui bagaimana posisi sticky bekerja.</p>
+    <p>Catatan: IE/Edge 15 dan versi yang lebih lama tidak mendukung sticky</p>
+
+    <div class="sticky">Hola aku adalah sticky!</div>
+
+    <div style="padding-bottom: 2000px;">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. (top:10)
+            Doloremque, veritatis? 
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, veritatis voluptatum 
+            molestias fuga esse quod sed iste ullam adipisci suscipit.
+        </p>
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+            Tempore, mollitia omnis. At numquam quis est tempora autem nobis, 
+            labore unde?
+        </p>
+    </div>
+</body>
+</html>
