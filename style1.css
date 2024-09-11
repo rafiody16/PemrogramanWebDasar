@@ -1,20 +1,81 @@
-html, body{
+html, body {
     margin: 0;
     padding: 0;
 }
 
-body{
+body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #ddd;
+    background-image: url(wlppr.jpg);
     line-height: 1.65;
-    padding-bottom: 1000px;
+
 }
 
 .container-satu {
-    width: 800px;
+    width: 1100px; 
     margin: 50px auto;
     background-color: #fff;
     padding: 20px;
     box-sizing: border-box;
     display: flex;
+    justify-content: space-between;
+    box-shadow: 1px 7px 17px 0px rgba(0,0,0,0.71);
+    -webkit-box-shadow: 1px 7px 17px 0px rgba(0,0,0,0.71);
+    -moz-box-shadow: 1px 7px 17px 0px rgba(0,0,0,0.71);
+    border-radius: 8px;
+    background-image: url(grunge.jpg);
+    background-size: 1100px;
 }
+
+.kolom-utama {
+    margin-right: 20px; 
+}
+
+.sidebar-satu, .sidebar-dua {
+    width: 200px; 
+}
+
+.sidebar-satu {
+    flex:1;
+    margin-right: 20px; 
+    text-align: center;
+}
+
+h2, h3 {
+    margin-top: 0;
+    
+}
+
+img{
+    width: 300px;
+    box-shadow: 2px 7px 24px 0px rgba(0,0,0,0.71);
+-webkit-box-shadow: 2px 7px 24px 0px rgba(0,0,0,0.71);
+-moz-box-shadow: 2px 7px 24px 0px rgba(0,0,0,0.71);
+border-radius: 2px;
+    
+}
+
+p{
+    text-align: left;
+    font-family: "Times New Roman", Times, serif;
+    font-style: italic;
+}
+
+a:link {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+  }
+  
+  a:visited {
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: none;
+    background-color: yellow;
+    font-weight: bolder;
+  }
+  
+  a:active {
+    text-decoration: underline;
+  }
