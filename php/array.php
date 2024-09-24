@@ -32,6 +32,24 @@ echo "Daftar karyawan dengan pengalaman kerja lebih dari 5 tahun: ".implode(',',
 $karyawanPengalamanLimaTahun);
 echo "<br><br>";
 
+$daftarNilai = [
+    'Matematika' => [
+        ['Alice', 85],
+        ['Bob', 92],
+        ['Charile', 78],
+    ],
+    'Fisika' => [
+        ['Alice', 90],
+        ['Bob', 88],
+        ['Charile', 75],
+    ], 
+    'Kimia' => [
+        ['Alice', 92],
+        ['Bob', 80],
+        ['Charile', 85],
+    ]
+];
 
+$mataKuliah = 'Fisika';
 
 ?>
