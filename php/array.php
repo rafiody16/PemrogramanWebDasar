@@ -32,11 +32,41 @@ echo "Daftar karyawan dengan pengalaman kerja lebih dari 5 tahun: ".implode(',',
 $karyawanPengalamanLimaTahun);
 echo "<br><br>";
 
+// $daftarNilai = [
+//     'Matematika' => [
+//         ['Alice', 85],
+//         ['Bob', 92],
+//         ['Charile', 78],
+//         ['David', 64],
+//         ['Eva', 90]
+//     ],
+//     'Fisika' => [
+//         ['Alice', 90],
+//         ['Bob', 88],
+//         ['Charile', 75],
+//     ], 
+//     'Kimia' => [
+//         ['Alice', 92],
+//         ['Bob', 80],
+//         ['Charile', 85],
+//     ]
+// ];
+
+// $mataKuliah = 'Fisika';
+
+// echo "Daftar nilai mahasiswa dalam mata kuliah $mataKuliah: <br>";
+
+// foreach ($daftarNilai[$mataKuliah] as $nilai) {
+//     echo "Nama: {$nilai[0]}, Nilai: {$nilai[1]} <br>";
+// }
+
 $daftarNilai = [
     'Matematika' => [
         ['Alice', 85],
         ['Bob', 92],
         ['Charile', 78],
+        ['David', 64],
+        ['Eva', 90]
     ],
     'Fisika' => [
         ['Alice', 90],
@@ -50,6 +80,23 @@ $daftarNilai = [
     ]
 ];
 
-$mataKuliah = 'Fisika';
+$total = 0;
+$mataKuliah = 'Matematika';
+
+foreach ($daftarNilai[$mataKuliah] as $nilai) {
+    $total += $nilai[1];
+}
+
+$rata2 = $total / count($daftarNilai[$mataKuliah]);
+
+echo "Rata-rata nilai Matematika: ". round($rata2, 2) ."<br>";
+echo "Daftar nilai mahasiswa diatas rata-rata Kelas dalam mata kuliah $mataKuliah: <br>";
+
+foreach ($daftarNilai[$mataKuliah] as $nilai) {
+    if ($nilai[1] > $rata2) {
+        echo "Mahasiswa: {$nilai[0]}, Nilai: {$nilai[1]} <br>";
+    }
+}
+
 
 ?>
