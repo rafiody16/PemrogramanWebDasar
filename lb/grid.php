@@ -22,16 +22,16 @@
         <div class="row">
             <div class="col-md-3 bg-success">Column left 25%</div>
             <div class="col-md-9 bg-warning">Column right 75%</div>
-        </div>
+        </div><hr>
         <div class="row">
             <div class="col-md-4 bg-success">Column left 33.3%</div>
             <div class="col-md-8 bg-warning">Column right 66.6%</div>
-        </div>
+        </div><hr>
         <div class="row">
             <div class="col-md-4 bg-success">Column left 33.3%</div>
             <div class="col-md-4 bg-warning">Column middle 33.3%</div>
             <div class="col-md-4 bg-success">Column right 33.3%</div>
-        </div>
+        </div><hr>
         <div class="row">
             <div class="col-md-3 bg-success">Column left 25%</div>
             <div class="col-md-6 bg-warning">Column middle 50%</div>
